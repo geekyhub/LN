@@ -8,12 +8,11 @@
 using namespace std;
 using namespace arma;
 
-
+void usage(int x);
 
 int main(int argc,char **argv){
-	
+	usage(argc);
 	Matrix A(argv[1]);
-	cout<<A.dimension()<<endl;
 	A.mat_diag();
 	A.mat_solve();
 
@@ -21,3 +20,10 @@ int main(int argc,char **argv){
 	return EXIT_SUCCESS;
 }
 
+void usage(int x){
+	if (x != 2){
+		cout<<"\nusage ./program [filename]"<<endl;
+		exit(EXIT_FAILURE);
+	}
+
+}
