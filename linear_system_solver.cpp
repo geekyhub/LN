@@ -1,12 +1,4 @@
-#include <iostream>
-#include <fstream>
 #include "Matrix.h"
-#include <string>
-#include <cstdlib>
-#include <armadillo>
-
-using namespace std;
-using namespace arma;
 
 void usage(int x);
 
